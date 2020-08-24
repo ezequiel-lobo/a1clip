@@ -21,7 +21,7 @@ body{
 }
 
 #wrapper{
-    background-color: teal;
+    background-color:none;
 }
 
 #footer{
@@ -169,4 +169,26 @@ ul.icons a{
 
 .grow:hover{ 
     transform: scale(1.1); 
+}
+
+.cover-art{
+    width: 150px;
+}
+
+th, td {
+    padding: 15px;
+  }
+
+th {
+    text-align: left;
+    background-color: rgb(34, 34, 34);
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+h1{
+    font-size: 72px;
 }

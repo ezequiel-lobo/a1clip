@@ -5,7 +5,7 @@ body{
     font-size: 20px;
     margin:0;
     padding:0;
-    padding-top: 212px;
+    padding-top: 182px;
 }
 
 #header{
@@ -172,15 +172,20 @@ ul.icons a{
 }
 
 .cover-art{
-    width: 150px;
+    width: 200px;
+}
+
+table{
+    width: 100%;
+    margin-top: 50px;
 }
 
 th, td {
     padding: 15px;
-  }
+}
 
 th {
-    text-align: left;
+    text-align: center;
     background-color: rgb(34, 34, 34);
 }
 
@@ -189,6 +194,17 @@ table, th, td {
     border-collapse: collapse;
 }
 
+td.center { 
+    text-align: center;   
+}
+
 h1{
-    font-size: 72px;
+    font-size: 48px;
+    margin-left: 1cm;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+}
+
+#cover-container{
+    text-align: center;
 }

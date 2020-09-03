@@ -8,6 +8,20 @@ body{
     padding-top: 182px;
 }
 
+#home-body{
+    background-color: rgb(20, 20, 20);
+    background-image:url('https://thumbs.gfycat.com/JitteryAntiqueBluebottlejellyfish-size_restricted.gif');
+    background-position: top 182px right;
+    background-size: 50%;
+    background-repeat: repeat-x;
+    color: #e6e6e6;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    padding-top: 182px;
+}
+
 #header{
     background-color: black;
     display: flex;
@@ -214,6 +228,61 @@ h1{
 
 #cover-container{
     text-align: center;
+}
+
+form{
+    display: inline-block;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #181818;
+    color: white;
+    border: none;
+    width: 300px;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: 80px;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    /* box-shadow:inset 0 0 0 2px #e6e6e6; */
+    cursor: pointer;
+}
+
+input:-webkit-autofill, /*Remueve el color blanco del autocompletado de Chrome*/
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #181818 inset !important;
+    box-shadow: inset 0 0 6px#181818;
+}
+
+input:-webkit-autofill {    /*Cambia el color del texto del autocompletado de Chrome*/
+    -webkit-text-fill-color: white !important;
+}
+
+textarea{
+    background-color: #181818;
+    color: white;
+    border:none;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 16px;
+    width: 525px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 /* PLAYLIST HTML */

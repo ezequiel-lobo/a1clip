@@ -21,7 +21,7 @@ body{
     background-image:url('https://thumbs.gfycat.com/JitteryAntiqueBluebottlejellyfish-size_restricted.gif');
     background-position: top 182px right;
     background-size: 50%;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     color: #e6e6e6;
     font-family: 'Alata', sans-serif;
     font-size: 20px;
@@ -88,6 +88,20 @@ a:hover{
     color: #afafaf;
 }
 
+label #sign-one, label #sign-two{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+    display: none;
+}
+
+#res-menu{
+    display: none;
+}
+
 .profile-pic{
     width: 120px;
     border-style: solid;
@@ -101,6 +115,10 @@ a:hover{
 
 .header-social{
     margin-right: 1cm;
+}
+
+.mf{
+    display: none;
 }
 
 .icons i{
@@ -206,7 +224,7 @@ ul.icons a{
     cursor: pointer;
     border-radius: 100px;
     font-size: 40px;
-} 
+}
 
 /* ANIMATIONS */
 
@@ -280,16 +298,12 @@ table, th, td {
 
 h1{
     font-size: 48px;
-    margin-block-start: 50px;
-    margin-block-end: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #cover-container{
     text-align: center;
-}
-
-form{
-    display: inline-block;
 }
 
 input{
@@ -391,4 +405,139 @@ h3{
 
 h3 a{
     color: #afafaf;
+}
+
+@media (max-width: 870px){
+
+    #home-body{
+        padding-top: 128px;
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+
+    body{
+        padding-top: 128px;
+        background-size: cover;
+        background-position-x: 50%;
+    }
+
+    .profile-pic{
+        width: 90px;
+        border-width: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    label #sign-one{
+        display: block;
+    }
+
+    #nav-bar{
+        margin: 0;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.808);
+        top: 128px;
+        left: -870px;
+        text-align: justify;
+        transition: 1s;
+        z-index: 10;
+    }
+
+    .header-social{
+        display: none;
+    }
+
+    .mf{
+        display: inherit;
+    }
+    .icons i{
+        font-size:30px;
+        line-height:60px;
+    }
+
+    .nav:not(:last-child){
+        padding-right: 0px;
+    }
+
+    nav ul li{
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #res-menu:checked ~ ul{
+        left: 0;
+    }
+
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+    
+    h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-info{
+        margin-top: 30px;
+    }
+
+    .cover-art{
+        width: 120px;
+    }
+
+    input{
+        width: 250px;
+    }
+
+    textarea{
+        width: 250px;
+    }
+
+    table{
+        font-size: 12px;
+    }
+
+    #playlist-container{
+        text-align: justify;
+    }
+
+    .playlist-card{
+        border-radius: 20px;
+        display: inline-flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .playlist-img{
+        width: 100px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    
+    .playlist-desc{
+        font-size: 12px;
+        color: black;
+        margin: auto;
+        margin-left: 20px;
+        text-align: justify;
+    }
 }

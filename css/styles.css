@@ -230,8 +230,6 @@ ul.icons a{
 
 .grow{ 
     transition: all .2s ease-in-out;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0); 
 }
 
 .grow:hover{ 
